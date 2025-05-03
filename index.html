@@ -33,8 +33,8 @@
             <li class="nav-item">
               <a class="link current" href="./index.html">Studio</a>
             </li>
-            <li class="nav-item"><a class="link" href="">Portfolio</a></li>
-            <li class="nav-item"><a class="link" href="">Contacts</a></li>
+            <li class="nav-item"><a class="link" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="link" href="#">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
@@ -49,15 +49,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button data-menu-open class="burger-btn" type="button">
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div data-menu class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" type="button">
+          <button data-menu-close class="mobile-menu-close" type="button">
             <svg class="mobile-menu-close-svg" width="8" height="8">
               <use href="./images/icons.svg#icon-closed"></use>
             </svg>
@@ -124,7 +124,7 @@
     <!--#region main-->
     <main>
       <!--#region section hero-->
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button">Order Service</button>
@@ -132,7 +132,7 @@
       </section>
       <!--#endregion section hero-->
       <!--#region section sec-empty-->
-      <section class="sec-empty">
+      <section class="sec-empty hidden">
         <div class="container">
           <h2 class="visually-hidden">Empty</h2>
           <ul class="ul-strat">
@@ -189,7 +189,7 @@
       </section>
       <!--#endregion section sec-empty-->
       <!--#region section Our Team-->
-      <section class="sec-team">
+      <section class="sec-team hidden">
         <div class="container">
           <h2 class="titled-team">Our Team</h2>
           <ul class="persons">
@@ -792,5 +792,7 @@
       </div>
     </div>
     <!--#endregion modal-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
