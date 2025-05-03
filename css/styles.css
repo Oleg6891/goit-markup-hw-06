@@ -362,9 +362,75 @@ button {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .hero {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tab/tab-hero1x.jpg);
+    max-width: 768px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tab/tab-hero2x.jpg);
+    }
+  }
+  .title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk/desk-hero1x.jpg);
+    max-width: 1440px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desk/desk-hero2x.jpg);
+    }
+  }
+  .title {
+    margin-bottom: 48px;
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: #404bbf;
+  }
+}
 /* #endregion hero mobile */
 /* #region sec-empty mobile*/
-/*.box {
+*.box {
   display: none;
 }
 .sec-empty {
@@ -374,11 +440,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  max-width: 288px;
 }
 .titles-empty {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
@@ -393,10 +461,56 @@ button {
 .item {
   max-width: 100%;
 }
-/* #endregion sec-empty mobile*/
+@media screen and (min-width: 768px) {
+  .ul-strat {
+    max-width: 736px;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .item {
+    max-width: calc((100% - 24px) / 2);
+  }
+  .titles-empty {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .sec-empty {
+    padding: 120px 0px;
+  }
+  .ul-strat {
+    flex-direction: row;
+    gap: 24px;
+    max-width: 1128px;
+  }
+  .item {
+    max-width: calc((100% - 72px) / 4);
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+  }
+  .titles-empty {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .text-empty {
+    font-weight: 400;
+  }
+}
+/* #endregion sec-empty all*/
 /* #region our team mobile*/
-/*.sec-team {
-  padding: 96px 12px 0px 12px;
+.sec-team {
+  padding: 96px 0;
   background-color: #f4f4fd;
 }
 .titled-team {
@@ -412,6 +526,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 72px;
   max-width: 264px;
 }
@@ -422,7 +537,9 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
+.whois {
+  padding: 32px 0;
+}
 .titles-team {
   text-align: center;
   margin-bottom: 8px;
