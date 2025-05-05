@@ -914,7 +914,7 @@ button {
 /*#endregion footer all*/
 
 /* #region modal-window */
-/*.backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1114,5 +1114,5 @@ input:checked + label > span {
 .modal-button-form:focus {
   background-color: #404bbf;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}*/
+}
 /* #endregion modal-window */
