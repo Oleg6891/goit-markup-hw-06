@@ -1063,6 +1063,8 @@ button {
   overflow: hidden;
 }
 .modal-label-checkbox {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 12px;
   line-height: 1.17;
@@ -1081,11 +1083,11 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  flex-shrink: 0;
   fill: transparent;
 }
 
-input:checked + label > span {
+input:checked + .modal-label-checkbox > .modal-checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
